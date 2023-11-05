@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  // add it to remove the error from the eslint with `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`
+  "rules": {
+    "react/no-unescaped-entities": 0
+  }
 }
