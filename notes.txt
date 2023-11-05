@@ -9,6 +9,7 @@ Prerequisites and start asumptions :
 - react-icons
 - implement with Framer Motion animations such as the animation from active item of 
 navbar 
+- clsx package for conditionally applying tailwind classNames 
 
 Reminders & Refreshers :
 - in the data.ts, the links are exported as const( a TypeScript feature that infer automatically the types ), so 
