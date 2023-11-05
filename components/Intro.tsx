@@ -26,7 +26,7 @@ const Intro = () => {
                     }}
                 >
                     <Image src={meImage} alt="Adrian Portrait" width="192"
-                        height="192" priority={true}
+                        height="192" quality="95" priority={true}
                         className='h-24 w-24 rounded-full border-[0.35rem] 
                         object-cover border-white shadow-xl' 
                     />
