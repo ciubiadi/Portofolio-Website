@@ -7,3 +7,12 @@ Prerequisites and start asumptions :
 - I will only use 1 page.
 - lib folder(from library) will contain the project data such as links to the navbar, the projects, skills or experience
 - react-icons
+- implement with Framer Motion animations such as the animation from active item of 
+navbar 
+
+Reminders & Refreshers :
+- 
+
+Header :
+- because of the animation I have 1 part which is the white background and 1 part which are the nav links
+
