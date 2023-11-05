@@ -1,10 +1,10 @@
 import React from "react";
 import { FaCloud, FaReact } from "react-icons/fa";
-import adminDashboardReactImg from '@public/admindashboardreact.png';
-import adminDashboardVanillaImg from '@public/admindashboardvanilla.png';
-import carHubImg from '@public/carhub.png';
-import foodOrderImg from '@public/foodorder.png';
-import promptopiaImg from '@public/promptopia.png';
+// import adminDashboardReactImg from '@public/admindashboardreact.png';
+// import adminDashboardVanillaImg from '@public/admindashboardvanilla.png';
+// import carHubImg from '@public/carhub.png';
+// import foodOrderImg from '@public/foodorder.png';
+// import promptopiaImg from '@public/promptopia.png';
 
 export const links = [
   {
@@ -79,7 +79,7 @@ export const projectsData = [
       car, the Fuel Urban Consumption, the class of the car, the number of cylinders,
        type of transmission. and many others. `,
     tags: ["React", "TypeScript", "Next.js", "MongoDB", "Tailwind"],
-    imageUrl: carHubImg,
+    imageUrl: '',
   },
   {
     title: "Promptopia",
@@ -89,7 +89,7 @@ export const projectsData = [
       prompted content. Basically this project represents a Full Stack Next.JS13 
       CRUD App`,
     tags: ["React", "Next.js", "MongoDB", "Tailwind" ],
-    imageUrl: promptopiaImg,
+    imageUrl: '',
   },
   {
     title: "Food Order",
@@ -101,7 +101,7 @@ export const projectsData = [
        the user clicks on "Order" action, a form with user's address needs to be 
        filled and submited in order for the order to be completed. `,
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: foodOrderImg,
+    imageUrl: '',
   },
   {
     title: "Admin Dashboard",
@@ -109,7 +109,7 @@ export const projectsData = [
       `This dashboard is created from scratch with React, Tailwind, MaterialUI, 
       FullClanedar, Formik, React Pro Sidebar and Nivo charts`,
     tags: ["React", "Tailwind"],
-    imageUrl: adminDashboardReactImg,
+    imageUrl: '',
   },
   {
     title: "Vanilla Admin Dashboard",
@@ -117,7 +117,7 @@ export const projectsData = [
       `Created from scratch a responsive Admin Dashboard with HTML, vanilla CSS 
       and vanilla JS.`,
     tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: adminDashboardVanillaImg,
+    imageUrl: '',
   },
 ] as const;
 

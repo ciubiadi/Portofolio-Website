@@ -7,3 +7,17 @@ Prerequisites and start asumptions :
 - I will only use 1 page.
 - lib folder(from library) will contain the project data such as links to the navbar, the projects, skills or experience
 - react-icons
+- implement with Framer Motion animations such as the animation from active item of 
+navbar 
+
+Reminders & Refreshers :
+- in the data.ts, the links are exported as const( a TypeScript feature that infer automatically the types ), so 
+it's telling that the strings for name and hash will not be any random strings but exactly the specified strings.
+Also "as const" is making them read-only.
+
+Header :
+- because of the animation I have 1 part which is the white background and 1 part which are the nav links
+- With initial and animate attributes in the motion.div, framer motion is generating
+a transform and translate declarations
+- the 2 animations from header are splitted into 2 motion.divs to avoid issues, so the white
+background animation is separated from the gray active nav link animation  
