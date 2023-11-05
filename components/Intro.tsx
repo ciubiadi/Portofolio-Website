@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Intro = () => {
   return (
-    <section>
+    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
         <div className='flex items-center justify-center'>
             {/* The span with emoji will be positioned "absolutely" to the bottom 
             right of this div, so this div will have position: relative */}
@@ -40,6 +40,16 @@ const Intro = () => {
                 </motion.span>
             </div>
         </div>
+        
+        {/* I use the space between curly brackets{" "} because in this way the text will
+        not be on the same line, so I'm saying explicitly that I want a space between. */}
+        <p className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'>
+            <span className="font-bold">Hello, I'm Adrian.</span> I'm a{" "}
+            <span className="font-bold">full-stack developer</span> with{" "}
+            <span className="font-bold">3 years</span> of experience. I enjoy
+            building <span className="italic">sites & apps</span>. My focus is{" "}
+            <span className="underline">React (Next.js)</span>.
+        </p>
     </section>
   )
 }
