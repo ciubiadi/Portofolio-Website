@@ -15,4 +15,5 @@ Reminders & Refreshers :
 
 Header :
 - because of the animation I have 1 part which is the white background and 1 part which are the nav links
-
+- With initial and animate attributes in the motion.div, framer motion is generating
+a transform and translate declarations
