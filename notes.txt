@@ -11,7 +11,9 @@ Prerequisites and start asumptions :
 navbar 
 
 Reminders & Refreshers :
-- 
+- in the data.ts, the links are exported as const( a TypeScript feature that infer automatically the types ), so 
+it's telling that the strings for name and hash will not be any random strings but exactly the specified strings.
+Also "as const" is making them read-only.
 
 Header :
 - because of the animation I have 1 part which is the white background and 1 part which are the nav links
