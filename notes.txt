@@ -31,6 +31,7 @@ hanges the position of the element relative to the parent element and relative t
 be in the regular document flow of the page. This means that it's relative to its original position within the parent element.
 *) Elements with "position: absolute" are not positioned based on their usual place in the document flow, but based on the position 
 of their ancestor.
+- I used "scroll-mt-28 mb-28" to position properly when clicking on the nav items, so I have a margin botton and top.
 
 
 Header :
