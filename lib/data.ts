@@ -1,10 +1,10 @@
 import React from "react";
 import { FaCloud, FaReact } from "react-icons/fa";
-// import adminDashboardReactImg from '@public/admindashboardreact.png';
-// import adminDashboardVanillaImg from '@public/admindashboardvanilla.png';
-// import carHubImg from '@public/carhub.png';
-// import foodOrderImg from '@public/foodorder.png';
-// import promptopiaImg from '@public/promptopia.png';
+import adminDashboardReactImg from '@/public/admindashboardreact.png';
+import adminDashboardVanillaImg from '@/public/admindashboardvanilla.png';
+import carHubImg from '@/public/carhub.png';
+import foodOrderImg from '@/public/foodorder.png';
+import promptopiaImg from '@/public/promptopia.png';
 
 export const links = [
   {
@@ -75,33 +75,25 @@ export const projectsData = [
     title: "CarHub",
     description:
       `This app allows the user to search for diverse cars and filter them by Fuel 
-      and Year. The user can view extra details for each car, such as images of the 
-      car, the Fuel Urban Consumption, the class of the car, the number of cylinders,
-       type of transmission. and many others. `,
+      and Year. Also, the user can view extra details for each car.`,
     tags: ["React", "TypeScript", "Next.js", "MongoDB", "Tailwind"],
-    imageUrl: '',
+    imageUrl: carHubImg,
   },
   {
     title: "Promptopia",
     description:
       `This app is an open source AI Prompting tool that helps users to discover, 
-      create and share creative prompts. The user can search for tags, usernames and 
-      prompted content. Basically this project represents a Full Stack Next.JS13 
-      CRUD App`,
+      create and share creative prompts.`,
     tags: ["React", "Next.js", "MongoDB", "Tailwind" ],
-    imageUrl: '',
+    imageUrl: promptopiaImg,
   },
   {
     title: "Food Order",
     description:
-      `This app allows the user to add the available foods to the cart and submit 
-      the cart. The user can add different quantities of the items and the cart will
-       be live updated (with a smooth animation as well for each cart update). 
-       The cart shows the total amount of total items and the total cost. After 
-       the user clicks on "Order" action, a form with user's address needs to be 
-       filled and submited in order for the order to be completed. `,
+      `This app allows the user to order the available foods, manage and submit 
+      the cart.`,
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: '',
+    imageUrl: foodOrderImg,
   },
   {
     title: "Admin Dashboard",
@@ -109,7 +101,7 @@ export const projectsData = [
       `This dashboard is created from scratch with React, Tailwind, MaterialUI, 
       FullClanedar, Formik, React Pro Sidebar and Nivo charts`,
     tags: ["React", "Tailwind"],
-    imageUrl: '',
+    imageUrl: adminDashboardReactImg,
   },
   {
     title: "Vanilla Admin Dashboard",
@@ -117,7 +109,7 @@ export const projectsData = [
       `Created from scratch a responsive Admin Dashboard with HTML, vanilla CSS 
       and vanilla JS.`,
     tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: '',
+    imageUrl: adminDashboardVanillaImg,
   },
 ] as const;
 
