@@ -35,7 +35,8 @@ be in the regular document flow of the page. This means that it's relative to it
 *) Elements with "position: absolute" are not positioned based on their usual place in the document flow, but based on the position 
 of their ancestor.
 - I used "scroll-mt-28 mb-28" to position properly when clicking on the nav items, so I have a margin botton and top.
-
+- If I have a client component I can still have a server component wrapped in there as long as I basically use 
+it through the children prop.
 
 Header :
 - because of the animation I have 1 part which is the white background and 1 part which are the nav links
