@@ -8,11 +8,15 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-
+import { useActiveSectionContext } from '@/context/active-section-context';
+import { useSectionInView } from '@/lib/hooks';
 
 const Intro = () => {
+    const { ref } = useSectionInView("Home", 0.5);
+    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
         <div className='flex items-center justify-center'>
             {/* The span with emoji will be positioned "absolutely" to the bottom 
             right of this div, so this div will have position: relative */}
@@ -76,7 +80,8 @@ const Intro = () => {
                 items-center gap-2 rounded-full outline-none focus:scale-110 
                 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
                 onClick={() => {
-                    console.log('Go to contact')
+                    setActiveSection("Contact");
+                    setTimeOfLastClick(Date.now());
                 }}
             >
                 Contact me here{" "}
