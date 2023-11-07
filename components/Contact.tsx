@@ -4,16 +4,29 @@ import React from "react";
 import SectionHeading from "./SectionHeading";
 import { useSectionInView } from "@/lib/hooks";
 import { FaPaperPlane } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
 
   return (
-    <section
+    <motion.section
       id="contact"
       ref={ref}
       // if the viewport is smaller than 38rem 100% will be the new width   
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
+      viewport={{
+        once: true,
+      }}
     >
       <SectionHeading>Contact me</SectionHeading>
 
@@ -53,6 +66,6 @@ export default function Contact() {
             Submit <FaPaperPlane />
         </button>
       </form>
-    </section>
+    </motion.section>
   );
 }
