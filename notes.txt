@@ -47,3 +47,10 @@ background animation is separated from the gray active nav link animation
 
 Experience Section :
 - It is a more complicated component so I will use a third party component (  React-vertical-timeline-component)
+
+Sending Email : 
+- Used third party "Resend" to send emails and "React.Email" to style the emails.
+- the ContactFormEmail component has the format pf the received emails
+- sendEmail action is stored in the /actions folder. Here, the validation of the sender and message is done. 
+Also this action handles the email sending with "Resend" 
+
