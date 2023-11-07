@@ -5,6 +5,10 @@ import adminDashboardVanillaImg from '@/public/admindashboardvanilla.png';
 import carHubImg from '@/public/carhub.png';
 import foodOrderImg from '@/public/foodorder.png';
 import promptopiaImg from '@/public/promptopia.png';
+import cloudlabIconImg from '@/public/cloudlab-small.jpeg'
+import newrocoIconImg from '@/public/newroco_small.webp';
+import deloitteIconImg from '@/public/Deloitte.icon.ico'
+import Image from "next/image";
 
 export const links = [
   {
@@ -47,25 +51,28 @@ export const experiencesData = [
   {
     title: "Full-Stack Developer",
     location: "Iasi, Romania",
+    company: 'Cloudlab AG',
     description:
-      `I worked as a full-stack developer for 1 year. I also upskilled to the full stack, mainly learning PHP, Magento, Laravel but also jQuery and VueJS.`,
-    icon: React.createElement(FaCloud),
+      `I worked as a full-stack developer for 1+ year. I also upskilled to the full stack, mainly learning PHP, Magento, Laravel but also jQuery and VueJS.`,
+    icon: <Image src={cloudlabIconImg} className='experience-logo-icons' alt="Cliudlab AG" width={50} height={50} />,
     date: "Mar 2019 - Apr 2021",
   },
   {
     title: "Full-Stack Developer",
     location: "Iasi, Romania",
+    company: 'Newroco',
     description:
-      `I've created from scratch an app for Oxford Archaeology. The stack I used included PHP and VueJS`,
-    icon: React.createElement(FaReact),
+      `I've created from scratch an app for Oxford Archaeology. The stack I used included PHP and VueJS.`,
+    icon: <Image src={newrocoIconImg} className='experience-logo-icons' alt="Newroco" width={50} height={50} />,
     date: "Apr 2022 - Aug 2022",
   },
   {
     title: "Salesforce Developer",
     location: "Iasi, Romania",
+    company: 'Deloitte Digital',
     description:
-      `Develop high level solutions using Apex classes, Triggers, Visualforce pages, Lightning Components and Lightning Web Components based on the best practices`,
-    icon: React.createElement(FaReact),
+      `Develop high level solutions using Apex classes, Triggers, Visualforce pages, Lightning Components and Lightning Web Components based on the best practices. Also I worked for a short period for an internal Ecommerce project in React and TypeScript.`,
+    icon: <Image src={deloitteIconImg} className='experience-logo-icons' alt="Newroco" width={50} height={50} style={{marginLeft: '4px'}}/>,
     date: "Aug 2022 - Present",
   },
 ] as const;
