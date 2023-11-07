@@ -11,7 +11,9 @@ type ActiveSectionContextProviderProps = {
 
 type ActiveSectionContextType = {
     activeSection: SectionName;
-    setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>
+    setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+    timeOfLastClick: number;
+    setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 }
 
 // it can be null when it is outside the Provider
@@ -19,11 +21,15 @@ export const ActiveSectionContext = React.createContext<ActiveSectionContextType
 
 const ActiveSectionContextProvider = ({children}: ActiveSectionContextProviderProps) => {
     const [activeSection, setActiveSection] = useState<SectionName>("Home");
+    // I need to keep track of this to disable the observer temporarily when user clicks on a link
+    const [timeOfLastClick, setTimeOfLastClick] = useState(0);
 
     return (
         <ActiveSectionContext.Provider value={{
             activeSection,
-            setActiveSection
+            setActiveSection,
+            timeOfLastClick,
+            setTimeOfLastClick
         }}>
             {children}
         </ActiveSectionContext.Provider>

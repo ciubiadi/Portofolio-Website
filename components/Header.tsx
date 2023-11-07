@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useContext, useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { links } from '@/lib/data';
@@ -10,7 +10,7 @@ import { ActiveSectionContext, useActiveSectionContext } from '@/context/active-
 const Header = () => {
     // const [activeSection, setActiveSection] = useState('Home');
     // const { activeSection, setActiveSection} = useContext(ActiveSectionContext);
-    const { activeSection, setActiveSection } = useActiveSectionContext();
+    const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
     return (
         <header className="z-[999] relative">
@@ -52,6 +52,7 @@ const Header = () => {
                                 href={link.hash}
                                 onClick={() => {
                                     setActiveSection(link.name);
+                                    setTimeOfLastClick(Date.now());
                                 }}
                             >
                                 {link.name}
