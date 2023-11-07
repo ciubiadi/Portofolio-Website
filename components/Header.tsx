@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { links } from '@/lib/data';
 import clsx from 'clsx';
-import { ActiveSectionContext, useActiveSectionContext } from '@/context/active-section-context';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 const Header = () => {
     // const [activeSection, setActiveSection] = useState('Home');
