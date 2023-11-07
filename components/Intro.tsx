@@ -2,27 +2,18 @@
 
 import meImage from '@/public/me.jpeg'
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useActiveSectionContext } from '@/context/active-section-context';
-import { useInView } from 'react-intersection-observer'
+import { useSectionInView } from '@/lib/hooks';
 
 const Intro = () => {
-    const {ref, inView} = useInView({
-        threshold: 0.5
-    });
-    
-    const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
-
-    useEffect(() => {
-        if(inView && Date.now() - timeOfLastClick > 1000){
-            setActiveSection("Home");
-        }
-    }, [inView, setActiveSection, timeOfLastClick])
+    const { ref } = useSectionInView("Home", 0.5);
+    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
@@ -89,7 +80,8 @@ const Intro = () => {
                 items-center gap-2 rounded-full outline-none focus:scale-110 
                 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
                 onClick={() => {
-                    console.log('Go to contact')
+                    setActiveSection("Contact");
+                    setTimeOfLastClick(Date.now());
                 }}
             >
                 Contact me here{" "}

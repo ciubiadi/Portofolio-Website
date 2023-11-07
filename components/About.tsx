@@ -1,26 +1,12 @@
 'use client';
 
-import React, { useEffect } from "react";
+import React from "react";
 import SectionHeading from "./SectionHeading";
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer'
-import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
 
 const About = () => {
-    // use useEffect because I'm trying to synchronize the state with an "external system". 
-    // Is not recommended settings state during rendering so that's why I will use useEffect
-    const {ref, inView} = useInView({
-        // when 75% is in the view,
-        threshold: 0.75
-    });
-    const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
-
-    useEffect(() => {
-        if(inView && Date.now() - timeOfLastClick > 1000){
-            setActiveSection("About");
-        }
-    }, [inView, setActiveSection, timeOfLastClick])
-
+    const { ref } = useSectionInView("About");
 
     return (
         <motion.section
