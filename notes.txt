@@ -12,6 +12,7 @@ navbar
 - clsx package for conditionally applying tailwind classNames 
 - Intersection Observer API (React Intersection Observer package) helps achieving nav item activation while user is scrolling. 
 Basically it helps attaching a ref to a section and then it will tell when that section goes in and out of the view.
+- For UI notifications I used React Hot Toast package
 
 Reminders & Refreshers :
 - in the data.ts, the links are exported as const( a TypeScript feature that infer automatically the types ), so 
