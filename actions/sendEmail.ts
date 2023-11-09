@@ -27,13 +27,13 @@ export const sendEmail = async (formData: FormData) => {
 
     try {
         data = await resend.emails.send({
-            from: "Contact Form adrian-ciubucciu.vercel.app>",
+            from: "Contact Form <onboarding@resend.dev>",
             to: "ciubucciu.adrianalbert@gmail.com",
             subject: "Message from contact form",
             reply_to: senderEmail,
             react: React.createElement(ContactFormEmail, {
-            message: message,
-            senderEmail: senderEmail,
+                message: message,
+                senderEmail: senderEmail,
             }),
         });
     } catch (error: unknown) {
