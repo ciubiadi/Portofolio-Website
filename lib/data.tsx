@@ -1,5 +1,4 @@
 import React from "react";
-import { FaCloud, FaReact } from "react-icons/fa";
 import adminDashboardReactImg from '@/public/admindashboardreact.png';
 import adminDashboardVanillaImg from '@/public/admindashboardvanilla.png';
 import carHubImg from '@/public/carhub.png';
