@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 html {
     --line-color: #e5e7eb;
 }
+
 
 .experience-logo-icons {
     border-radius: 100px; 
@@ -20,4 +27,8 @@ html {
 
 .borderBlack {
     @apply border border-black/10;
+}
+
+.colored-balls {
+    transform: translateZ(0);
 }
