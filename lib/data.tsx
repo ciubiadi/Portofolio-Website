@@ -84,6 +84,8 @@ export const projectsData = [
       and Year. Also, the user can view extra details for each car.`,
     tags: ["React", "TypeScript", "Next.js", "MongoDB", "Tailwind"],
     imageUrl: carHubImg,
+    repo: 'https://github.com/ciubiadi/CarsHub/tree/client-side-rendered',
+    liveUrl: 'https://carshub-five.vercel.app/'
   },
   {
     title: "Promptopia",
@@ -92,6 +94,8 @@ export const projectsData = [
       create and share creative prompts.`,
     tags: ["React", "Next.js", "MongoDB", "Tailwind" ],
     imageUrl: promptopiaImg,
+    repo: 'https://github.com/ciubiadi/Promptopia',
+    liveUrl: 'https://promptopia-ruby-zeta.vercel.app/'
   },
   {
     title: "Food Order",
@@ -100,6 +104,8 @@ export const projectsData = [
       the cart.`,
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: foodOrderImg,
+    repo: 'https://github.com/ciubiadi/My-Learning-Journey/tree/React/Udemy-Complete-Guide/The-Food-Order-App-Project',
+    liveUrl: 'https://the-food-order-react-app.netlify.app/'
   },
   {
     title: "Admin Dashboard",
@@ -108,6 +114,8 @@ export const projectsData = [
       FullClanedar, Formik, React Pro Sidebar and Nivo charts`,
     tags: ["React", "Tailwind"],
     imageUrl: adminDashboardReactImg,
+    repo: 'https://github.com/ciubiadi/React-Admin-Dashboard',
+    liveUrl: 'https://react-admin-dashboard.adrian-ciubucciu.app'
   },
   {
     title: "Vanilla Admin Dashboard",
@@ -116,6 +124,8 @@ export const projectsData = [
       and vanilla JS.`,
     tags: ["HTML", "CSS", "JavaScript"],
     imageUrl: adminDashboardVanillaImg,
+    repo: 'https://github.com/ciubiadi/Vanilla-Admin-Dashboard',
+    liveUrl: 'https://vanilla-admin-dashboard.adrian-ciubucciu.app'
   },
 ] as const;
 
