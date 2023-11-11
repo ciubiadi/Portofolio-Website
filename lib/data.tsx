@@ -115,7 +115,7 @@ export const projectsData = [
     tags: ["React", "Tailwind"],
     imageUrl: adminDashboardReactImg,
     repo: 'https://github.com/ciubiadi/React-Admin-Dashboard',
-    liveUrl: 'https://react-admin-dashboard.adrian-ciubucciu.app'
+    liveUrl: ''
   },
   {
     title: "Vanilla Admin Dashboard",
@@ -125,7 +125,7 @@ export const projectsData = [
     tags: ["HTML", "CSS", "JavaScript"],
     imageUrl: adminDashboardVanillaImg,
     repo: 'https://github.com/ciubiadi/Vanilla-Admin-Dashboard',
-    liveUrl: 'https://vanilla-admin-dashboard.adrian-ciubucciu.app'
+    liveUrl: ''
   },
 ] as const;
 

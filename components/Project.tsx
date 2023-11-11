@@ -106,6 +106,7 @@ const Project = ( {title, description, tags, imageUrl, repo, liveUrl} : ProjectP
                         <Link href={liveUrl} target="_blank" className="white-button" > 
                             <FaGlobe className='overlay-icon' />
                         </Link> */}
+                        
                         <Link
                             href={repo}
                             className="dark:text-gray-300 dark:hover:text-gray-900 dark:hover:bg-gray-150 
@@ -120,6 +121,7 @@ const Project = ( {title, description, tags, imageUrl, repo, liveUrl} : ProjectP
                             See Code{" "}
                             <FaGithub className="text-xl opacity-70 transition-all group-hover:scale-[1.2]" />{" "}
                         </Link>
+                        {liveUrl !== '' && (
                         <Link
                             className="dark:text-gray-300 dark:hover:text-gray-900 dark:hover:bg-gray-150 
                             dark:hover:bg-opacity-100
@@ -134,6 +136,7 @@ const Project = ( {title, description, tags, imageUrl, repo, liveUrl} : ProjectP
                             Demo Live{" "}
                             <FaGlobe className="text-xl opacity-70 transition-all group-hover:scale-[1.2]" />{" "}
                         </Link>
+                        )}
                     </div>
               </div>
             </motion.div>
