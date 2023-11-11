@@ -111,7 +111,7 @@ export const projectsData = [
     title: "Admin Dashboard",
     description:
       `This dashboard is created from scratch with React, Tailwind, MaterialUI, 
-      FullClanedar, Formik, React Pro Sidebar and Nivo charts`,
+      FullClanedar, Formik, React Pro Sidebar and Nivo charts.`,
     tags: ["React", "Tailwind"],
     imageUrl: adminDashboardReactImg,
     repo: 'https://github.com/ciubiadi/React-Admin-Dashboard',
