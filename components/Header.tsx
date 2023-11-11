@@ -39,7 +39,7 @@ const Header = () => {
                                     transition dark:text-gray-500
                                      dark:hover:text-gray-400 dark:active:text-gray-200`,
                                     {
-                                      'text-gray-950 dark:text-gray-200':
+                                      'text-gray-950 dark:text-gray-100':
                                         activeSection === link.name,
                                     }
                                 )}
