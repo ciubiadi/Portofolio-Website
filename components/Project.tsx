@@ -115,6 +115,7 @@ const Project = ( {title, description, tags, imageUrl, repo, liveUrl} : ProjectP
                             text-[0.7rem] uppercase tracking-wider rounded-full group  flex items-center 
                              justify-center gap-2 h-[3rem] w-[8rem] outline-none transition-all 
                              focus:scale-110 hover:scale-110  active:scale-105"
+                            target="_blank"
                         >
                             See Code{" "}
                             <FaGithub className="text-xl opacity-70 transition-all group-hover:scale-[1.2]" />{" "}
@@ -128,6 +129,7 @@ const Project = ( {title, description, tags, imageUrl, repo, liveUrl} : ProjectP
                              justify-center gap-2 h-[3rem] w-[8rem] outline-none transition-all 
                              focus:scale-110 hover:scale-110  active:scale-105"
                             href={liveUrl}
+                            target="_blank"
                         >
                             Demo Live{" "}
                             <FaGlobe className="text-xl opacity-70 transition-all group-hover:scale-[1.2]" />{" "}
