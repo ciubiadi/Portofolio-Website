@@ -27,7 +27,7 @@ const Header = () => {
                 >
                     {links.map((link) => (
                         <motion.li
-                            className="h-3/4 flex items-center justify-center relative"
+                            className="h-3/4 flex items-center justify-center relative "
                             key={link.hash}
                             initial={{ y: -100, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
@@ -37,7 +37,7 @@ const Header = () => {
                                     `flex w-full items-center justify-center px-3 
                                     py-3 hover:text-gray-950 
                                     transition 
-                                     dark:hover:text-gray-300 dark:active:text-gray-100 dark:text-gray-500`,
+                                     dark:hover:text-gray-300 dark:active:text-gray-100 `,
                                     {
                                       'text-gray-950 dark:text-gray-100': activeSection === link.name,
                                     }
@@ -52,7 +52,7 @@ const Header = () => {
 
                                 {link.name === activeSection && (
                                     <motion.span
-                                        className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+                                        className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-700"
                                         layoutId="activeSection"
                                         transition={{
                                             type: "spring",
