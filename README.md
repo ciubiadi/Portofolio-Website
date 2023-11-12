@@ -1,10 +1,10 @@
-# My Portofolio Website
+# My Portofolio
 ## App description
-Welcome to My Portfolio
+### Welcome to My Portfolio
 
 I'm excited to introduce you to my digital space, a dynamic showcase that serves as both my resume and a curated collection of my work. Designed with a perfect blend of minimalism and vibrancy, my portfolio not only highlights my projects but also provides a glimpse into my skills, employment history, and overall journey in the world of technology.
 
-Key Features:
+### Key Features:
 
 Dark and Light Mode: Seamlessly switch between dark and light themes to enhance your viewing experience.
 Framer Motion Animations: Enjoy smooth and captivating animations powered by Framer Motion, especially crafted for scrolling through my projects and navigating the site.
@@ -22,7 +22,7 @@ Technological Stack:
 * React Email, Resend: Ensuring a reliable and secure contact experience.
 * Overcoming Challenges: Building this portfolio wasn't without its challenges. Overcoming limitations in Firefox and addressing display issues in Chrome are just few examples. The result is a website that not only looks great but performs flawlessly across different browsers.
 
-Future Plans:
+### Future Plans:
 I'm not stopping here. My next venture involves building the full-stack EvolvMe app, diving deeper into the functionalities of Next.js and React. Stay tuned for more exciting updates and innovative projects.
 
 Thank you for visiting my portfolio. Feel free to explore, and if you have any questions or feedback, don't hesitate to get in touch.
