@@ -23,7 +23,7 @@ Technological Stack:
 * Overcoming Challenges: Building this portfolio wasn't without its challenges. Overcoming limitations in Firefox and addressing display issues in Chrome are just few examples. The result is a website that not only looks great but performs flawlessly across different browsers.
 
 ### Future Plans:
-I'm not stopping here. My next venture involves building the full-stack EvolvMe app, diving deeper into the functionalities of Next.js and React. Stay tuned for more exciting updates and innovative projects.
+I'm not stopping here. My next venture involves building the full-stack EvolVMe app, diving deeper into the functionalities of Next.js and React. Stay tuned for more exciting updates and innovative projects.
 
 Thank you for visiting my portfolio. Feel free to explore, and if you have any questions or feedback, don't hesitate to get in touch.
 <strong>The app can be tested here : https://adrian-ciubucciu.vercel.app/</strong>
