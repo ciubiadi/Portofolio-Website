@@ -54,7 +54,7 @@ export const experiencesData = [
     description:
       `I worked as a full-stack developer for 1+ year. I also upskilled to the full stack, mainly learning PHP, Magento, Laravel but also jQuery and VueJS.`,
     icon: <Image src={cloudlabIconImg} className='experience-logo-icons' alt="Cliudlab AG" width={50} height={50} />,
-    date: "Mar 2019 - Apr 2021",
+    date: "Mar 2021 - Apr 2022",
   },
   {
     title: "Full-Stack Developer",
@@ -149,4 +149,7 @@ export const skillsData = [
   "Redux",
 //   "Express",
   "PostgreSQL",
+  "Salesforce",
+  "Apex",
+  'LWC'
 ] as const;

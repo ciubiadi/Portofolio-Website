@@ -22,7 +22,7 @@ const Project = ( {title, description, tags, imageUrl, repo, liveUrl,  isSelecte
         "0" means the bottom of the viewport corss the top of the target(project) 
         which is "1". The "1.33" says that the animation should end when the bottom of the  viewport has gone 
         33% beyond the end of the project.
-    */
+    */ 
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -32,14 +32,14 @@ const Project = ( {title, description, tags, imageUrl, repo, liveUrl,  isSelecte
     const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
     // Animation controls for the overlay
-    // const overlayAnimationControls = useAnimation();
+    const overlayAnimationControls = useAnimation();
 
     // const [showOverlay, setShowOverlay] = useState(false);
 
-    // const handleProjectClick = () => {
-    //   setShowOverlay(!showOverlay);
-    //   overlayAnimationControls.start(showOverlay ? 'hidden' : 'visible');
-    // };
+    const handleProjectClick = () => {
+        onProjectClick();
+        overlayAnimationControls.start(isSelected ? 'hidden' : 'visible');
+    };
 
     return (
         <motion.div
@@ -51,7 +51,7 @@ const Project = ( {title, description, tags, imageUrl, repo, liveUrl,  isSelecte
             className={`group mb-3 sm:mb-8 last:mb-0 ${isSelected ? 'selected' : ''}`}
         >
             <section
-                onClick={() => onProjectClick()}
+                onClick={() => handleProjectClick()}
                 className={`bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20`}
             >
                 <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
@@ -94,11 +94,11 @@ const Project = ( {title, description, tags, imageUrl, repo, liveUrl,  isSelecte
                         <motion.div
                         className={`overlay ${isSelected ? 'active' : ''}`}
                         initial="hidden"
-                        animate="visible"
+                        animate={overlayAnimationControls}
                         exit="hidden"
                         variants={{
-                            visible: { opacity: 1, scale: 1 },
-                            hidden: { opacity: 0, scale: 0.8 },
+                            visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+                            hidden: { opacity: 0, scale: 0.5 },
                         }}
                         >
                             <div className="overlay-background" />
