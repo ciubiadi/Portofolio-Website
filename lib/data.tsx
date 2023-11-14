@@ -52,7 +52,7 @@ export const experiencesData = [
     location: "Iasi, Romania",
     company: 'Cloudlab AG',
     description:
-      `I worked as a full-stack developer for 1+ year. I also upskilled to the full stack, mainly learning PHP, Magento, Laravel but also jQuery and VueJS.`,
+      `I worked as a full-stack developer for 1+ year. I was mainly developing functionalities and solving bugs for some e-commerce websites. I used  PHP, Magento, Laravel and jQuery, VueJS but also KnockoutJS, Linux Servers, PuTy terminal and WinSCP.`,
     icon: <Image src={cloudlabIconImg} className='experience-logo-icons' alt="Cliudlab AG" width={50} height={50} />,
     date: "Mar 2021 - Apr 2022",
   },
@@ -70,7 +70,7 @@ export const experiencesData = [
     location: "Iasi, Romania",
     company: 'Deloitte Digital',
     description:
-      `Develop high level solutions using Apex classes, Triggers, Visualforce pages, Lightning Components and Lightning Web Components based on the best practices. Also I worked for a short period for an internal Ecommerce project in React and TypeScript.`,
+      `Develop high level solutions using Apex(Programming language 95% based on Java), Triggers, Visualforce pages, Lightning Components and Lightning Web Components based on the best practices. Also I worked for a short period for an internal Ecommerce project in React and TypeScript.`,
     icon: <Image src={deloitteIconImg} className='experience-logo-icons' alt="Newroco" width={50} height={50} style={{marginLeft: '4px'}}/>,
     date: "Aug 2022 - Present",
   },
