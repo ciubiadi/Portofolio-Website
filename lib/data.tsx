@@ -83,7 +83,7 @@ export const projectsData = [
     description:
       `This VueJS cooking app, enhances the culinary experience with dynamic search, paginated view,
        and coach registration. `,
-    tags: ["Vue 3", "Vuex 4", "Vue Router 4", "Typescript", "Tailwind", "Firebase"],
+    tags: ["Vue 3", "Vuex 4", "Vue Router 4", "TypeScript", "Tailwind", "Firebase"],
     imageUrl: goodFoodRecipesImg,
     repo: 'https://github.com/ciubiadi/Good-Food-Recipes',
     liveUrl: 'https://vuemealsandcooks.web.app/',
