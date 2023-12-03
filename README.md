@@ -6,11 +6,10 @@ I'm excited to introduce you to my digital space, a dynamic showcase that serves
 
 ### Key Features:
 
-Dark and Light Mode: Seamlessly switch between dark and light themes to enhance your viewing experience.
-Framer Motion Animations: Enjoy smooth and captivating animations powered by Framer Motion, especially crafted for scrolling through my projects and navigating the site.
-Interactive Header: Watch as key information elegantly pops up in the header, creating a visually appealing introduction to my portfolio.
-Design Aesthetic:
-The design philosophy of my portfolio revolves around a clean, minimalistic layout with a touch of vibrancy. Striking a balance between simplicity and visual appeal, the design ensures a pleasant and engaging exploration of my professional journey.
+* Dark and Light Mode: Seamlessly switch between dark and light themes to enhance your viewing experience.
+* Framer Motion Animations: Enjoy smooth and captivating animations powered by Framer Motion, especially crafted for scrolling through my projects and navigating the site.
+* Interactive Header: Watch as key information elegantly pops up in the header, creating a visually appealing introduction to my portfolio.
+* Design Aesthetic: The design philosophy of my portfolio revolves around a clean, minimalistic layout with a touch of vibrancy. Striking a balance between simplicity and visual appeal, the design ensures a pleasant and engaging exploration of my professional journey.
 
 Technological Stack:
 * Built with the latest technologies, my portfolio leverages the power of:
