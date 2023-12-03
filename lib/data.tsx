@@ -1,6 +1,7 @@
 import React from "react";
 import adminDashboardReactImg from '@/public/admindashboardreact.png';
 import adminDashboardVanillaImg from '@/public/admindashboardvanilla.png';
+import goodFoodRecipesImg from '@/public/goodfoodrecipes.png';
 import carHubImg from '@/public/carhub.png';
 import foodOrderImg from '@/public/foodorder.png';
 import promptopiaImg from '@/public/promptopia.png';
@@ -77,6 +78,16 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Good Food Recipes",
+    description:
+      `This VueJS cooking app, enhances the culinary experience with dynamic search, paginated view,
+       and coach registration. `,
+    tags: ["Vue 3", "Vuex 4", "Vue Router 4", "Typescript", "Tailwind", "Firebase"],
+    imageUrl: goodFoodRecipesImg,
+    repo: 'https://github.com/ciubiadi/Good-Food-Recipes',
+    liveUrl: 'https://vuemealsandcooks.web.app/',
+  },
   {
     title: "CarHub",
     description:
